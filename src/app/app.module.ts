@@ -7,6 +7,7 @@ import { GaleryphotosComponent } from './component/galeryphotos/galeryphotos.com
 import { TodolistComponent } from './component/todolist/todolist.component';
 import { HomeComponent } from './component/home/home.component';
 import { UsersComponent } from './component/users/users.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UsersComponent } from './component/users/users.component';
     GaleryphotosComponent,
     TodolistComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    NavbarComponent
 
   ],
   imports: [
