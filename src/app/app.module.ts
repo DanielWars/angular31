@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GaleryphotosComponent } from './component/galeryphotos/galeryphotos.component';
 import { TodolistComponent } from './component/todolist/todolist.component';
+import { HomeComponent } from './component/home/home.component';
+import { UsersComponent } from './component/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GaleryphotosComponent,
-    TodolistComponent
+    TodolistComponent,
+    HomeComponent,
+    UsersComponent
+
   ],
   imports: [
     BrowserModule,
