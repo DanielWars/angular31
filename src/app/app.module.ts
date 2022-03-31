@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GaleryphotosComponent } from './component/galeryphotos/galeryphotos.component';
+import { TodolistComponent } from './component/todolist/todolist.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GaleryphotosComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
