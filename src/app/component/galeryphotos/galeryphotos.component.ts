@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotosService, Tphoto } from 'src/app/services/photos.service';
 
 @Component({
   selector: 'app-galeryphotos',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeryphotos.component.css']
 })
 export class GaleryphotosComponent implements OnInit {
+  photos: Tphoto[] = [];
 
-  constructor() { }
+  constructor(private service: PhotosService) { 
+    this.service.getPhotos().then( (response) => {
+      console.log( response );
+      this.photos = response;
+    });
+  }
+
+
 
   ngOnInit(): void {
   }

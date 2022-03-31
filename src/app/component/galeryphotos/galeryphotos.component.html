@@ -1,1 +1,6 @@
-<p>galeryphotos works!</p>
+
+<div *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+    <h4>{{ photo.title}}</h4>
+</div>
+
