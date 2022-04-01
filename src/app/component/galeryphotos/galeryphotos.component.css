@@ -1,0 +1,17 @@
+.margin-and-pading{
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-photos > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

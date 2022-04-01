@@ -1,7 +1,8 @@
 
-<div *ngFor="let photo of photos">
-    <img [src]="photo.thumbnailUrl" [alt]="photo.title">
-    <h4>{{ photo.title}}</h4>
-    <button>Ver Detalles</button>
+<div class="margin-and-pading container-photos">
+    <div *ngFor="let photo of photos" class="margin-and-pading">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+        <h4>{{ photo.title}}</h4>
+        <button>Ver Detalles</button>
+    </div>
 </div>
-
