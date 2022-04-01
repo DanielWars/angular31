@@ -13,7 +13,7 @@ export type Tphoto = {
   providedIn: 'root'
 })
 export class PhotosService {
-  url: string = 'https://jsonplaceholder.typicode.com/photos?_limit=10';
+  url: string = 'https://jsonplaceholder.typicode.com/photos?_limit=20';
 
   getPhotos(): Promise<Tphoto[]>{
     return axios.get(this.url).then( (response) => response.data );
