@@ -11,12 +11,9 @@ export class GaleryphotosComponent implements OnInit {
 
   constructor(private service: PhotosService) { 
     this.service.getPhotos().then( (response) => {
-      console.log( response );
       this.photos = response;
     });
   }
-
-
 
   ngOnInit(): void {
   }

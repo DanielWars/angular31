@@ -38,7 +38,7 @@ export type Tuser = {
 export class UsersService {
   url: string = 'https://jsonplaceholder.typicode.com/users';
 
-  getUsers(): Promise<Tuser>{
+  getUsers(): Promise<Tuser[]>{
     return axios.get(this.url).then( (response) => response.data );
   }
 

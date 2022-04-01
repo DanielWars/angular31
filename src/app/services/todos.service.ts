@@ -14,7 +14,7 @@ export type Ttodo = {
 export class TodosService {
   url: string = 'https://jsonplaceholder.typicode.com/todos';
 
-  getTodos(): Promise<Ttodo>{
+  getTodos(): Promise<Ttodo[]>{
     return axios.get(this.url).then( (response) => response.data );
   }
 

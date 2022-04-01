@@ -1,1 +1,4 @@
-<p>todolist works!</p>
+<h3>Lista de Tareas</h3>
+<ul>
+    <li *ngFor="let todo of todos"><span [class.completed]="todo.completed">{{ todo.title }}</span></li>
+</ul>
